@@ -1,0 +1,142 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --black: 0 0% 0%;
+    --white: 0 0% 100%;
+    --transparent: transparent;
+
+    /* Accent (Purple-ish) Palette */
+    --accent-rgb-50: 245 243 255;
+    --accent-rgb-100: 237 233 254;
+    --accent-rgb-200: 221 214 254;
+    --accent-rgb-300: 196 181 253;
+    --accent-rgb-400: 167 139 250;
+    --accent-rgb-500: 139 92 246;
+    --accent-rgb-600: 124 58 237;
+    --accent-rgb-700: 109 40 217;
+    --accent-rgb-800: 91 33 182;
+    --accent-rgb-900: 76 29 149;
+    --accent-rgb-950: 46 16 101;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    /* Grayscale Palette */
+    --grayscale-rgb-50: 250 250 250;
+    --grayscale-rgb-100: 244 244 245;
+    --grayscale-rgb-200: 228 228 231;
+    --grayscale-rgb-300: 212 212 216;
+    --grayscale-rgb-400: 161 161 170;
+    --grayscale-rgb-500: 113 113 122;
+    --grayscale-rgb-600: 82 82 91;
+    --grayscale-rgb-700: 63 63 70;
+    --grayscale-rgb-800: 39 39 42;
+    --grayscale-rgb-900: 24 24 27;
+    --grayscale-rgb-950: 9 9 11;
+
+    /* Theme Variables */
+    --background: 0 0% 0%;
+    --foreground: 213 31% 91%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+    --input: 214.3 31.8% 91.4%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 215 20.2% 65.1%;
+    --radius: 0.5rem;
+
+    /* Dark mode values */
+    --textOnAccent-primary: var(--grayscale-50);
+    --text-primary: 250 250 250;
+    --text-secondary: 161 161 170;
+    --text-tertiary: 113 113 122;
+    --surface-primary: 0 0 0;
+    --surface-secondary: 24 24 27;
+    --surface-tertiary: 39 39 42;
+    --border: 39 39 42;
+    --control: 139 92 246;
+    --error: 0 100% 58%;
+    --success: 158 72% 49%;
+    --da-header-height: 65px;
+    --sandeep: red;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 213 31% 91%;
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+    --border: 39 39 42;
+    --input: 0 0% 100% / 0.1;
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+    --surface-primary: 9 9 11;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 216 34% 17%;
+    --radius: 0.5rem;
+    --text-primary: 250 250 250;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    /* Use hsl() with CSS variable to support Tailwind opacity */
+    background-color: rgb(var(--grayscale-rgb-950));
+    color: hsl(var(--foreground));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.logoItem {
+  flex-shrink: 0;
+}
+
+.logoCarousel {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logoTrack {
+  display: flex;
+  width: calc(200%);
+  animation: scrollLeft 20s linear infinite;
+  gap: 1rem;
+}
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
