@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
     const [open, setOpen] = useState(false)
@@ -35,10 +36,10 @@ const Header: React.FC = () => {
                     {/* Desktop Navigation */}
                     <div className="hidden items-center space-x-6 lg:flex">
                         {renderDropdown("Data Center Infrastructure Management", [
-                            { name: "Monitoring Devices", href: "#" },
-                            { name: "Asset Tracking", href: "-management" },
-                            { name: "Network Management", href: "" },
-                            { name: "Change Managmeent", href: "-management" },
+                            { name: "Monitoring Devices", href: "/dc-management/monitoring" },
+                            { name: "Asset Tracking", href: "dc-management/asset-management" },
+                            { name: "Network Management", href: "/dc-management/networking" },
+                            { name: "Change Managmeent", href: "/dc-management/change-management" },
                             { name: "Colocation Management", href: "/dc-management/colocation" },
                             { name: "Data Center Planner", href: "/dc-management/dc-planner" },
                             { name: "Firmware Management", href: "/dc-management/firmware" },
@@ -131,13 +132,13 @@ const renderDropdown = (title: string, items: DropdownItem[]) => {
             <div className="invisible absolute right-0 mt-2 w-64 rounded-md border border-white bg-background opacity-0 shadow-lg transition-all duration-200 ease-in-out group-hover:visible group-hover:opacity-100">
                 <div className="py-1">
                     {items.map((item, index) => (
-                        <a
+                        <Link
                             key={index}
                             className="block px-4 py-2 text-sm font-semibold text-primary hover:text-foreground/80"
-                            href="#"
+                            to={item.href}
                         >
                             {item.name}
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>

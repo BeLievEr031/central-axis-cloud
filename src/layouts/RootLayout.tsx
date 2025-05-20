@@ -4,7 +4,7 @@ import { Footer } from '../components/Footer'
 
 function RootLayout() {
     return (
-        <div>
+        <div className='text-white'>
             <Header />
             <Outlet />
             <Footer />
