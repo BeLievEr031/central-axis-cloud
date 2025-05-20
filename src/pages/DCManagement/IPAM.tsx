@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ipamFeatures = [
     {
         title: 'Automated Discovery',
