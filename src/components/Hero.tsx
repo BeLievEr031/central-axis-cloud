@@ -13,13 +13,21 @@ function Hero() {
                 ></div>
                 <div className="col-span-1 flex h-full items-center justify-center"></div>
             </div>
-
+            <figure
+                className="bg-accent-500/40 pointer-events-none absolute -bottom-[60%] left-1/2 z-0 block aspect-square w-[520px] -translate-x-1/2 rounded-full blur-[200px]"
+            ></figure>
+            <figure
+                className="bg-surface-primary dark:bg-dark-surface-primary pointer-events-none absolute left-[4vw] top-[64px] z-20 hidden aspect-square w-[32vw] rounded-full opacity-50 blur-[100px] md:block"
+            ></figure>
+            <figure
+                className="bg-surface-primary dark:bg-dark-surface-primary pointer-events-none absolute bottom-[-50px] right-[7vw] z-20 hidden aspect-square w-[30vw] rounded-full opacity-50 blur-[100px] md:block"
+            ></figure>
             <div
-                className="dark:divide-dark-border relative z-10 flex flex-col divide-y divide-red-500 pt-[35px] border-2 border-red-700"
+                className="dark:divide-dark-border relative z-10 flex flex-col divide-y divide-border pt-[35px]"
             >
                 <div>
                     <div
-                        className="mx-auto flex min-h-[288px] max-w-[80vw] shrink-0 flex-col items-center justify-center gap-2 px-2 py-4 sm:px-16 lg:px-24 border-2 border-green-500"
+                        className="mx-auto flex min-h-[288px] max-w-[80vw] shrink-0 flex-col items-center justify-center gap-2 px-2 py-4 sm:px-16 lg:px-24"
                     >
                         <h1
                             className="text-text-primary dark:text-dark-text-primary max-w-screen-lg text-pretty text-center text-[clamp(32px,7vw,64px)] font-medium leading-none tracking-[-1.44px] md:tracking-[-2.16px]"
