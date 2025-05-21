@@ -70,7 +70,7 @@ const Header: React.FC = () => {
                         {renderDropdown("Sustainability Blog", [
                             {
                                 name: "Energy Efficiency",
-                                href: "#"
+                                href: "/energy-solutions/pue-tracking"
                             },
                             { name: "Stranded Energy Map", href: "/energy-solutions/energy-map" },
                             { name: "Environmental Product Declaration", href: "/energy-solutions/environmental-product-declaration" },
@@ -244,12 +244,12 @@ const SidebarNav = () => {
                     >
                         {section.links.map((link, i) => (
                             <li key={i}>
-                                <a
+                                <Link
                                     className="text-text-tertiary dark:text-dark-text-tertiary flex items-center gap-2 rounded-md px-3 py-1.5"
-                                    href="#"
+                                    to={link.href}
                                 >
                                     {link.label}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>

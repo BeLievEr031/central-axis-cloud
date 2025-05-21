@@ -24,6 +24,11 @@ import LEEDCompliance from "../pages/compliance/LEEDCompliance";
 import ISO301342Compliance from "../pages/compliance/ISO301342Compliance";
 import EnergyStarCompliance from "../pages/compliance/EnergyStarCompliance";
 import JRCGuidelines from "../pages/compliance/JRCGuidelines";
+import PUETracking from "../pages/energysolutions/PUETracking";
+import EnergyMap from "../pages/energysolutions/EnergyMap";
+import EnvironmentalProductDeclarations from "../pages/energysolutions/EnvironmentalProductDeclarations";
+import RenewableEnergyIntegration from "../pages/energysolutions/RenewableEnergyIntegration";
+import PowerResourceManagement from "../pages/energysolutions/PowerResourceManagement";
 
 const router = createBrowserRouter([
     {
@@ -125,6 +130,26 @@ const router = createBrowserRouter([
             {
                 path: '/compliance/ec-jrc',
                 element: <JRCGuidelines />
+            },
+            {
+                path: '/energy-solutions/pue-tracking',
+                element: <PUETracking />
+            },
+            {
+                path: '/energy-solutions/energy-map',
+                element: <EnergyMap />
+            },
+            {
+                path: "/energy-solutions/environmental-product-declaration",
+                element: <EnvironmentalProductDeclarations />
+            },
+            {
+                path: "/energy-solutions/renewables-integration",
+                element: <RenewableEnergyIntegration />
+            },
+            {
+                path: "/energy-solutions/power-resource-managment",
+                element: <PowerResourceManagement />
             },
         ]
     }
