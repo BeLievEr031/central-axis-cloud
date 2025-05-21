@@ -1,4 +1,5 @@
 import BackgroundVdo from "../../assets/background.webm"
+import DataCenterMap from "../../components/DataCenterMap";
 const features = [
     {
         title: "Interactive Mapping",
@@ -55,6 +56,7 @@ const EnergyMap = () => {
                 </p>
             </section>
 
+            <DataCenterMap />
             <section className="mb-12">
                 <h2 className="text-2xl font-semibold mb-4">Key Features of Our Stranded Energy Solution</h2>
                 <div className="grid md:grid-cols-2 gap-8">

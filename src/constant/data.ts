@@ -1,0 +1,86 @@
+interface DataCenter {
+    name: string;
+    coords: [number, number];
+    powerMW?: number;
+}
+
+export const dataCenterLocations: DataCenter[] = [
+    // Brazil
+    { name: "São Paulo, Brazil", coords: [-23.5505, -46.6333], powerMW: 300 },
+    { name: "Rio de Janeiro, Brazil", coords: [-22.9068, -43.1729], powerMW: 250 },
+    { name: "Brasília, Brazil", coords: [-15.7939, -47.8828], powerMW: 200 },
+    { name: "Belo Horizonte, Brazil", coords: [-19.9167, -43.9345], powerMW: 180 },
+    { name: "Fortaleza, Brazil", coords: [-3.7319, -38.5267], powerMW: 150 },
+    { name: "Curitiba, Brazil", coords: [-25.4284, -49.2733], powerMW: 170 },
+    { name: "Manaus, Brazil", coords: [-3.1190, -60.0217], powerMW: 160 },
+    { name: "Recife, Brazil", coords: [-8.0476, -34.8770], powerMW: 140 },
+    { name: "Porto Alegre, Brazil", coords: [-30.0346, -51.2177], powerMW: 190 },
+    { name: "Salvador, Brazil", coords: [-12.9777, -38.5016], powerMW: 130 },
+    // Chile
+    { name: "Santiago, Chile", coords: [-33.4489, -70.6693], powerMW: 220 },
+    { name: "Valparaíso, Chile", coords: [-33.0472, -71.6127], powerMW: 180 },
+    { name: "Concepción, Chile", coords: [-36.8201, -73.0444], powerMW: 160 },
+    { name: "Antofagasta, Chile", coords: [-23.6500, -70.4000], powerMW: 150 },
+    { name: "La Serena, Chile", coords: [-29.9027, -71.2519], powerMW: 140 },
+    { name: "Temuco, Chile", coords: [-38.7359, -72.5904], powerMW: 130 },
+    { name: "Iquique, Chile", coords: [-20.2141, -70.1521], powerMW: 120 },
+    { name: "Rancagua, Chile", coords: [-34.1708, -70.7406], powerMW: 110 },
+    { name: "Talca, Chile", coords: [-35.4264, -71.6554], powerMW: 100 },
+    { name: "Puerto Montt, Chile", coords: [-41.4717, -72.9369], powerMW: 90 },
+    // Mexico
+    { name: "Mexico City, Mexico", coords: [19.4326, -99.1332], powerMW: 300 },
+    { name: "Guadalajara, Mexico", coords: [20.6597, -103.3496], powerMW: 250 },
+    { name: "Monterrey, Mexico", coords: [25.6866, -100.3161], powerMW: 240 },
+    { name: "Tijuana, Mexico", coords: [32.5149, -117.0382], powerMW: 220 },
+    { name: "Puebla, Mexico", coords: [19.0414, -98.2063], powerMW: 210 },
+    { name: "León, Mexico", coords: [21.1222, -101.6821], powerMW: 200 },
+    { name: "Querétaro, Mexico", coords: [20.5888, -100.3899], powerMW: 190 },
+    { name: "Mérida, Mexico", coords: [20.9674, -89.5926], powerMW: 180 },
+    { name: "San Luis Potosí, Mexico", coords: [22.1565, -100.9855], powerMW: 170 },
+    { name: "Aguascalientes, Mexico", coords: [21.8853, -102.2916], powerMW: 160 },
+    // Argentina
+    { name: "Buenos Aires, Argentina", coords: [-34.6037, -58.3816], powerMW: 280 },
+    { name: "Córdoba, Argentina", coords: [-31.4201, -64.1888], powerMW: 240 },
+    { name: "Rosario, Argentina", coords: [-32.9442, -60.6505], powerMW: 220 },
+    { name: "Mendoza, Argentina", coords: [-32.8895, -68.8458], powerMW: 200 },
+    { name: "La Plata, Argentina", coords: [-34.9214, -57.9545], powerMW: 180 },
+    { name: "San Miguel de Tucumán, Argentina", coords: [-26.8083, -65.2176], powerMW: 160 },
+    { name: "Mar del Plata, Argentina", coords: [-38.0055, -57.5426], powerMW: 140 },
+    { name: "Salta, Argentina", coords: [-24.7821, -65.4232], powerMW: 120 },
+    { name: "Santa Fe, Argentina", coords: [-31.6333, -60.7000], powerMW: 100 },
+    { name: "San Juan, Argentina", coords: [-31.5375, -68.5364], powerMW: 90 },
+    // Colombia
+    { name: "Bogotá, Colombia", coords: [4.7110, -74.0721], powerMW: 260 },
+    { name: "Medellín, Colombia", coords: [6.2442, -75.5812], powerMW: 230 },
+    { name: "Cali, Colombia", coords: [3.4516, -76.5320], powerMW: 210 },
+    { name: "Barranquilla, Colombia", coords: [10.9685, -74.7813], powerMW: 190 },
+    { name: "Cartagena, Colombia", coords: [10.3910, -75.4794], powerMW: 170 },
+    { name: "Cúcuta, Colombia", coords: [7.8891, -72.4967], powerMW: 150 },
+    { name: "Bucaramanga, Colombia", coords: [7.1193, -73.1227], powerMW: 130 },
+    { name: "Pereira, Colombia", coords: [4.8087, -75.6906], powerMW: 110 },
+    { name: "Santa Marta, Colombia", coords: [11.2408, -74.1990], powerMW: 100 },
+    { name: "Ibagué, Colombia", coords: [4.4389, -75.2322], powerMW: 90 },
+    // Peru
+    { name: "Lima, Peru", coords: [-12.0464, -77.0428], powerMW: 250 },
+    { name: "Arequipa, Peru", coords: [-16.4090, -71.5375], powerMW: 200 },
+    { name: "Trujillo, Peru", coords: [-8.1120, -79.0288], powerMW: 180 },
+    { name: "Chiclayo, Peru", coords: [-6.7760, -79.8440], powerMW: 160 },
+    { name: "Piura, Peru", coords: [-5.1945, -80.6328], powerMW: 140 },
+    { name: "Cusco, Peru", coords: [-13.5319, -71.9675], powerMW: 120 },
+    { name: "Iquitos, Peru", coords: [-3.7437, -73.2516], powerMW: 100 },
+    { name: "Huancayo, Peru", coords: [-12.0651, -75.2049], powerMW: 90 },
+    { name: "Pucallpa, Peru", coords: [-8.3791, -74.5539], powerMW: 80 },
+    { name: "Tacna, Peru", coords: [-18.0066, -70.2463], powerMW: 70 },
+    // Bolivia
+    { name: "La Paz, Bolivia", coords: [-16.5000, -68.1500], powerMW: 180 },
+    { name: "Santa Cruz de la Sierra, Bolivia", coords: [-17.7833, -63.1833], powerMW: 160 },
+    { name: "Cochabamba, Bolivia", coords: [-17.3833, -66.1500], powerMW: 140 },
+    { name: "Sucre, Bolivia", coords: [-19.0333, -65.2627], powerMW: 120 },
+    { name: "Oruro, Bolivia", coords: [-17.9667, -67.1167], powerMW: 100 },
+    { name: "Potosí, Bolivia", coords: [-19.5833, -65.7500], powerMW: 90 },
+    { name: "Tarija, Bolivia", coords: [-21.5333, -64.7333], powerMW: 80 },
+    { name: "Trinidad, Bolivia", coords: [-14.8333, -64.9000], powerMW: 70 },
+    { name: "Cobija, Bolivia", coords: [-11.0333, -68.7667], powerMW: 60 },
+    { name: "Riberalta, Bolivia", coords: [-11.0000, -66.1000], powerMW: 50 },
+]
+
