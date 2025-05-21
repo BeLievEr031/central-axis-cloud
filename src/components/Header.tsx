@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Header: React.FC = () => {
     const [open, setOpen] = useState(false)
     return (
-        <header className="sticky top-0 z-40 flex w-full justify-center border-border bg-background/60 backdrop-blur-xl transition-all border-b text-white px-8">
+        <header className="sticky top-0 z-[9999999] flex w-full justify-center border-border bg-background/60 backdrop-blur-xl transition-all border-b text-white px-8">
             <div className="container flex h-16 items-center justify-between py-4" style={{ maxWidth: "unset" }}>
                 <div className="flex w-full items-center justify-between py-2">
                     {/* Logo Section */}

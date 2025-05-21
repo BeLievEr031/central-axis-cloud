@@ -13,7 +13,7 @@ const DataCenterMap: React.FC = () => {
         <MapContainer
             center={[-15.0, -60.0]}
             zoom={4}
-            style={{ height: "50vh", width: "100%" }}
+            style={{ height: "50vh", width: "100%", }}
         >
             <TileLayer
                 url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
